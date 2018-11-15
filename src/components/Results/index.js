@@ -4,13 +4,22 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import PortraitIcon from '@material-ui/icons/Portrait';
 import Divider from '@material-ui/core/Divider';
 import './Results.css';
 
 const Results = ({ contacts, inputValue }) => {
+  function compareStrings(a, b) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+
+    return (a < b) ? -1 : (a > b) ? 1 : 0;
+  }
+
+  contacts.sort(function(a, b) {
+    return compareStrings(a.name, b.name);
+  })
+
   var filteredContacts = contacts.filter((contact) => {
     return contact.name.toLowerCase().indexOf(inputValue.toLowerCase()) !== -1;
     }
@@ -24,7 +33,7 @@ const Results = ({ contacts, inputValue }) => {
               <div className="App-Result">
                 <ListItem>
                   <Avatar>
-                    <ImageIcon />
+                    <PortraitIcon />
                   </Avatar>
                   <ListItemText key={i} primary={contact.name} secondary={contact.number} />
                 </ListItem>
@@ -41,7 +50,7 @@ const Results = ({ contacts, inputValue }) => {
             <div className="App-Result">
                 <ListItem>
                   <Avatar>
-                    <ImageIcon />
+                    <PortraitIcon />
                   </Avatar>
                   <ListItemText key={i} primary={contact.name} secondary={contact.number} />
                 </ListItem>
