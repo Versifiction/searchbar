@@ -11,7 +11,7 @@ const Input = ({ inputValue, onInputChange }) => {
                     type="text"
                     value={inputValue}
                     onChange={onInputChange}
-                    placeholder="Entrez le nom d'un contact"
+                    placeholder="Entrez un nom ou un numéro"
                 />
             </form>
         </div>

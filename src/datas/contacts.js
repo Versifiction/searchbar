@@ -6,12 +6,37 @@ export default [
     },
     {
       name: "Alpha",
-      number: "0678148647",
+      number: "0678148687",
       sexe: "female",
     },
     {
+      name: "Marc",
+      number: "0678147847",
+      sexe: "male",
+    },
+    {
+      name: "Alfreddo",
+      number: "0675628647",
+      sexe: "male",
+    },
+    {
+      name: "Al",
+      number: "0674562197",
+      sexe: "male",
+    },
+    {
+      name: "Alberta",
+      number: "0674712637",
+      sexe: "female",
+    },
+    {
+      name: "Emmanuel",
+      number: "0647128657",
+      sexe: "male",
+    },
+    {
       name: "Roméo",
-      number: "0678449731",
+      number: "0678449732",
       sexe: "male",
     },
     {

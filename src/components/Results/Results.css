@@ -14,14 +14,17 @@ ul li {
 }
 
 ul {
-  margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   -webkit-padding-start: inherit !important;
 }
 
 .App-Result {
-  margin: 0 auto;
-  display: block;
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
   width: 250px;
   background-color: white;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 }
